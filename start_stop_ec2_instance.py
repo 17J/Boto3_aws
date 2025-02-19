@@ -32,5 +32,13 @@
     
 # # )
 
+#start instance
+response = aws_ec2.start_instances(
+    InstanceIds='instanceid'
+)
 
-    
+
+#stop instance
+response = aws_ec2.stop_instances(
+    InstanceIds='instanceid'
+)
