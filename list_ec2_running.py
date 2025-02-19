@@ -16,4 +16,4 @@ result = ec2_console.describe_instances()
 
 for instance_id in result['Reservations']:
     for key_names in instance_id['Instances']:
-        print(key_names['KeyName'])
+        print(key_names['InstanceId'])
